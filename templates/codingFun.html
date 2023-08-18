@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Cuts!</title>
+</head>
+<body>
+    <h1>Short Cut Notes</h1>
+    <div>  
+        <h2>FROM APP.PY</h2>
+        
+        from boggle import Boggle <br>
+        from flask import Flask, session, render_template, redirect, request <br>
+        from flask_debugtoolbar import DebugToolbarExtension <br>
+
+        app = Flask(__name__) <br>
+        app.config['SECRET_KEY'] = "somebodyoncetoldme" <br>
+        debug = DebugToolbarExtension(app) <br>
+
+        app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False <br>
+    </div>
+
+    <div>
+        <h2>FOR index.HTML</h2>
+        //link rel="stylesheet" href="/static/app.css">
+        //script src="/static/app.js">'<'/script>
+        //script src="https://code.jquery.com/jquery-3.2.1.js">'<'/script>
+        //script src="https://unpkg.com/axios/dist/axios.js">'<'/script>
+    </div>
+
+</body>
+</html>

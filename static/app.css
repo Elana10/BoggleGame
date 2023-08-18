@@ -1,0 +1,165 @@
+body {
+    background: rgb(178, 139, 250); 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+td {
+    height: 40px;
+    width: 40px;
+    border: black 3px solid;
+    margin: white 3px solid;
+    padding: 0;
+    text-align: center; 
+    padding: 8px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+
+table {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+    table-layout: fixed;
+    margin: 8px;
+}
+
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 18px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    
+}
+
+input {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+button {
+    width: 200px; 
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin: auto; 
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+section {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+div {
+    font-size: larger;
+    background: white;
+    border: black 2px solid;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+li.ok {
+    background-color: rgb(140, 181, 140);
+    border-radius: 2px;
+    
+}
+
+li.not-on-board {
+    background-color: rgb(242, 202, 130);
+    border-radius: 2px;
+    
+}
+
+li.not-word {
+    background-color: rgb(242, 202, 130);
+    border-radius: 2px;
+    
+}
+
+li.already-guessed{
+    background-color: rgb(242, 202, 130);
+    
+}
+
+#high-score-display {
+    font-size: 30px;
+    color: blue;
+    background: lightskyblue;
+    padding: 20px;
+}
+
+main.fixed-main{
+    border: 2px black solid;
+    color: white;
+    background-color: pink;
+    position: relative;
+}
+
+#div-start{
+    border-radius: 8px;
+    height: 40px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+}
+
+#div-start:hover{
+    background-color: rgb(185, 81, 255);
+    border-radius: 8px;
+    color: white;
+    
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#container {
+    margin: 10px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#constant {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boggle</title>
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+    
+
+    <main id = "content">
+        <h1>Boggle Game</h1>
+ 
+        <section id="current_score">Current Score: </section>
+            <section>Time Left:</section><section id = 'timer'></section>
+
+            <div id = "container">
+                
+                <div id="div-table">
+                    <table id = table-table> 
+                    {% for row in board %}
+                        <tr> 
+                            {% for ltr in row %}
+                            <td>{{ltr}}</td>
+                            {% endfor %}
+                        </tr>
+                        
+                    {% endfor %}
+                    </table>
+                </div>
+
+                
+            </div>
+            <div id="div-start" class= "hide-game">
+                    Start Game
+                </div>
+        </section>
+
+        <form id = "guess_form" method="post" class = "hide">
+            <label for="guess">Enter your new boggle word:</label>
+            <input type="text" placeholder="Type your word" name= "guess" id = "guessAPI">
+            <button>Submit</button>
+        </form>
+
+        <section>
+            <ul id = "visible_list">
+            </ul>
+        </section>
+        
+    </main>
+
+    <main id = "fixed-main">
+
+        <section id = "constant"> 
+            <h2>Current Attempt</h2>
+            <section id ="attempt_num"></section>
+
+            <h2>High Score</h2>
+            <section id="high_score_display">
+            </section>
+            
+            <h2>RULES</h2>
+            <section>            
+                <ul>
+                    <li>3 letter word: 1 point</li>
+                    <li>4 letter word: 1 point</li>
+                    <li>5 letter word: 2 points</li>
+                    <li>6 letter word: 3 points</li>
+                    <li>7 letter word: 5 points</li>
+                    <li>8+ letter word: 11 points</li>
+                </ul>
+            </section>
+        </section>    
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
